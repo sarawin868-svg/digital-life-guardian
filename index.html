@@ -1,0 +1,4186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Digital Life Guardian</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🛡️
+            </div>
+
+            <div>
+
+                <h2>Digital Life</h2>
+
+                <span>Guardian</span>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a
+                href="#dashboard"
+                class="nav-item active"
+            >
+                <span>▦</span>
+                Dashboard
+            </a>
+
+
+            <a
+                href="#documents"
+                class="nav-item"
+            >
+                <span>📄</span>
+                Documents
+            </a>
+
+
+            <a
+                href="#alerts"
+                class="nav-item"
+            >
+                <span>🔔</span>
+                Alerts
+            </a>
+
+
+            <a
+                href="#guardian"
+                class="nav-item"
+            >
+                <span>🤖</span>
+                Guardian AI
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="guardian-mini">
+
+                <div class="mini-avatar">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <strong>
+                        Guardian Active
+                    </strong>
+
+                    <small>
+                        Protection enabled
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main
+        class="main-content"
+        id="dashboard"
+    >
+
+
+        <!-- =================================================
+             TOPBAR
+        ================================================== -->
+
+        <header class="topbar">
+
+            <div>
+
+                <div class="eyebrow">
+                    DIGITAL SECURITY SYSTEM
+                </div>
+
+
+                <h1>
+                    Welcome to your Guardian
+                </h1>
+
+
+                <p class="subtitle">
+                    Monitor your digital documents and security from one place.
+                </p>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <div
+                    id="backend-status"
+                    class="backend-status checking"
+                >
+
+                    <span class="status-dot"></span>
+
+                    Checking Backend...
+
+                </div>
+
+
+                <button
+                    id="theme-toggle"
+                    class="icon-btn"
+                    title="Toggle theme"
+                >
+                    🌙
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             SYSTEM BANNER
+        ================================================== -->
+
+        <section class="system-banner">
+
+            <div class="banner-icon">
+                🛡️
+            </div>
+
+
+            <div class="banner-text">
+
+                <strong>
+                    Guardian Mode Active
+                </strong>
+
+                <span>
+                    Your digital environment is being monitored continuously.
+                </span>
+
+            </div>
+
+
+            <div class="banner-status">
+
+                <span class="pulse-dot"></span>
+
+                SYSTEM PROTECTED
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             STAT CARDS
+        ================================================== -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+                    📄
+                </div>
+
+
+                <div>
+
+                    <span class="stat-label">
+                        Documents
+                    </span>
+
+                    <h2 id="document-count">
+                        0
+                    </h2>
+
+                    <small>
+                        Total files
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+                    ⏰
+                </div>
+
+
+                <div>
+
+                    <span class="stat-label">
+                        Expiring Soon
+                    </span>
+
+                    <h2 id="expiring-count">
+                        0
+                    </h2>
+
+                    <small>
+                        Need attention
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon red">
+                    🔴
+                </div>
+
+
+                <div>
+
+                    <span class="stat-label">
+                        Expired
+                    </span>
+
+                    <h2 id="expired-count">
+                        0
+                    </h2>
+
+                    <small>
+                        Action required
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    🔔
+                </div>
+
+
+                <div>
+
+                    <span class="stat-label">
+                        Alerts
+                    </span>
+
+                    <h2 id="alerts-count">
+                        0
+                    </h2>
+
+                    <small>
+                        Active alerts
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SECURITY OVERVIEW
+        ================================================== -->
+
+        <section class="security-overview-grid">
+
+
+            <!-- RISK SCORE -->
+
+            <div class="card risk-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Security Risk Score
+                        </h3>
+
+                        <p>
+                            Overall digital protection level
+                        </p>
+
+                    </div>
+
+
+                    <span class="live-badge">
+
+                        <span class="green-dot"></span>
+
+                        LIVE
+
+                    </span>
+
+                </div>
+
+
+                <div class="risk-content">
+
+                    <div class="risk-circle">
+
+                        <div class="risk-circle-inner">
+
+                            <strong id="risk-score">
+                                100
+                            </strong>
+
+                            <span>
+                                /100
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="risk-details">
+
+                        <div
+                            id="risk-status"
+                            class="risk-status safe"
+                        >
+                            🟢 SAFE
+                        </div>
+
+
+                        <p id="risk-message">
+                            Your digital environment is currently secure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-checks">
+
+
+                    <div class="risk-check">
+
+                        <span>
+                            📄 Documents
+                        </span>
+
+                        <strong id="risk-documents">
+                            !
+                        </strong>
+
+                    </div>
+
+
+                    <div class="risk-check">
+
+                        <span>
+                            ⏰ Expiry Status
+                        </span>
+
+                        <strong id="risk-expiry">
+                            ✓
+                        </strong>
+
+                    </div>
+
+
+                    <div class="risk-check">
+
+                        <span>
+                            🛡️ Security
+                        </span>
+
+                        <strong id="risk-security">
+                            ✓
+                        </strong>
+
+                    </div>
+
+
+                    <div class="risk-check">
+
+                        <span>
+                            🖥️ Backend
+                        </span>
+
+                        <strong id="risk-backend">
+                            ✓
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTIVITY TIMELINE -->
+
+            <div class="card timeline-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Security Activity
+                        </h3>
+
+                        <p>
+                            Recent Guardian events
+                        </p>
+
+                    </div>
+
+
+                    <span
+                        id="activity-log-count"
+                        class="section-count"
+                    >
+                        0 events
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="security-timeline"
+                    class="security-timeline"
+                >
+
+                    <div class="timeline-empty">
+
+                        <div>
+                            🛡️
+                        </div>
+
+                        <strong>
+                            Waiting for activity
+                        </strong>
+
+                        <span>
+                            Guardian events will appear here.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ACTIVITY + SECURITY
+        ================================================== -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- ACTIVITY MONITOR -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Activity Monitor
+                        </h3>
+
+                        <p>
+                            Real-time guardian activity
+                        </p>
+
+                    </div>
+
+
+                    <div class="live-badge">
+
+                        <span class="green-dot"></span>
+
+                        LIVE
+
+                    </div>
+
+                </div>
+
+
+                <div class="activity-main">
+
+                    <div class="activity-ring">
+
+                        <div>
+
+                            <strong id="activity-count">
+                                0
+                            </strong>
+
+                            <span>
+                                CHECKS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-info">
+
+                        <div
+                            id="activity-status"
+                            class="monitor-status"
+                        >
+
+                            <span class="green-dot"></span>
+
+                            🟢 Monitoring
+
+                        </div>
+
+
+                        <p>
+                            Guardian automatically checks your system
+                            and document status at regular intervals.
+                        </p>
+
+
+                        <small>
+
+                            Last check:
+
+                            <strong id="last-check">
+                                --
+                            </strong>
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SECURITY -->
+
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h3>
+                            Security Alerts
+                        </h3>
+
+                        <p>
+                            Suspicious activity detection
+                        </p>
+
+                    </div>
+
+
+                    <span
+                        id="security-level"
+                        class="security-level normal"
+                    >
+                        NORMAL
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="security-box"
+                    class="security-box normal"
+                >
+
+                    <div class="security-icon">
+                        ✓
+                    </div>
+
+
+                    <div>
+
+                        <strong id="security-alert">
+                            No suspicious activity detected
+                        </strong>
+
+                        <p>
+                            Your environment is currently secure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="test-security-btn"
+                    class="secondary-btn"
+                >
+                    ⚡ Run Security Test
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ALERTS
+        ================================================== -->
+
+        <section
+            id="alerts"
+            class="card"
+        >
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        Document Expiry Alerts
+                    </h3>
+
+                    <p>
+                        Documents requiring your attention
+                    </p>
+
+                </div>
+
+
+                <span
+                    id="alert-section-count"
+                    class="section-count"
+                >
+                    0 alerts
+                </span>
+
+            </div>
+
+
+            <div
+                id="expiry-alerts"
+                class="alerts-container"
+            >
+
+                <div class="empty-state">
+
+                    <div>
+                        🔔
+                    </div>
+
+                    <strong>
+                        No expiry alerts
+                    </strong>
+
+                    <span>
+                        Your documents are currently under control.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DOCUMENTS
+        ================================================== -->
+
+        <section
+            id="documents"
+            class="card"
+        >
+
+            <div class="card-header">
+
+                <div>
+
+                    <h3>
+                        My Documents
+                    </h3>
+
+                    <p>
+                        Manage documents and their expiry dates
+                    </p>
+
+                </div>
+
+
+                <span
+                    id="document-section-count"
+                    class="section-count"
+                >
+                    0 documents
+                </span>
+
+            </div>
+
+
+
+            <div
+                id="document-list"
+                class="document-list"
+            >
+
+                <div class="empty-state">
+
+                    <div>
+                        📂
+                    </div>
+
+                    <strong>
+                        No documents yet
+                    </strong>
+
+                    <span>
+                        Add your first document below.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DOCUMENT ADD -->
+
+            <div class="upload-area">
+
+                <div class="upload-icon">
+                    📤
+                </div>
+
+
+                <div class="upload-content">
+
+                    <h4>
+                        Add a new document
+                    </h4>
+
+
+                    <p>
+                        Select a file and optionally set its expiry date.
+                    </p>
+
+
+                    <div class="upload-controls">
+
+
+                        <label class="file-label">
+
+                            <span>
+                                📎 Choose File
+                            </span>
+
+
+                            <input
+                                type="file"
+                                id="fileInput"
+                                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
+                            >
+
+                        </label>
+
+
+
+                        <div class="date-wrapper">
+
+                            📅
+
+                            <input
+                                type="date"
+                                id="expiryDate"
+                            >
+
+                        </div>
+
+
+
+                        <button
+                            id="add-document-btn"
+                            class="primary-btn"
+                        >
+                            ➕ Add Document
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="selected-file-name"
+                        class="selected-file-name"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             GUARDIAN AI
+        ================================================== -->
+
+        <section
+            id="guardian"
+            class="card guardian-card"
+        >
+
+            <div class="guardian-header">
+
+                <div class="guardian-avatar">
+                    🤖
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Digital Life Guardian
+                    </h3>
+
+                    <p>
+                        Your intelligent security assistant
+                    </p>
+
+                </div>
+
+
+                <div class="guardian-online">
+
+                    <span class="green-dot"></span>
+
+                    ONLINE
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SUGGESTIONS -->
+
+            <div class="suggestion-row">
+
+                <button class="suggestion">
+                    How many documents?
+                </button>
+
+
+                <button class="suggestion">
+                    Which documents are expiring?
+                </button>
+
+
+                <button class="suggestion">
+                    Show expired documents
+                </button>
+
+
+                <button class="suggestion">
+                    What is my security status?
+                </button>
+
+
+                <button class="suggestion">
+                    Which document should I renew first?
+                </button>
+
+            </div>
+
+
+
+            <!-- CHAT -->
+
+            <div
+                id="chat-area"
+                class="chat-area"
+            >
+
+                <div class="chat-message guardian-message">
+
+                    <div class="chat-avatar">
+                        🤖
+                    </div>
+
+
+                    <div class="message-bubble">
+
+                        <strong>
+                            Guardian
+                        </strong>
+
+
+                        <p>
+                            Hello! 👋 I'm your Digital Life Guardian.
+                            Ask me about your documents, expiry dates,
+                            alerts or security status.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CHAT INPUT -->
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="guardian-question"
+                    placeholder="Ask Guardian something..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="send-guardian-btn"
+                    class="send-btn"
+                >
+                    ➤
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer>
+
+            <span>
+                Digital Life Guardian • BTech Project
+            </span>
+
+
+            <span>
+                Secure • Smart • Simple
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+
+<script>
+
+"use strict";
+
+
+/* =========================================================
+   GLOBAL VARIABLES
+========================================================= */
+
+let activityCount = 0;
+
+let documentCounter = 0;
+
+
+
+/* =========================================================
+   BACKEND STATUS
+========================================================= */
+
+async function updateBackendStatus() {
+
+    const statusElement =
+        document.getElementById(
+            "backend-status"
+        );
+
+
+    const riskBackend =
+        document.getElementById(
+            "risk-backend"
+        );
+
+
+    try {
+
+        const response =
+            await fetch(
+                "http://127.0.0.1:5000/api/status"
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "Backend unavailable"
+            );
+
+        }
+
+
+        await response.json();
+
+
+        if (statusElement) {
+
+            statusElement.className =
+                "backend-status connected";
+
+
+            statusElement.innerHTML =
+                '<span class="status-dot"></span> Backend Online';
+
+        }
+
+
+        if (riskBackend) {
+
+            riskBackend.textContent =
+                "✓";
+
+        }
+
+
+    } catch (error) {
+
+        if (statusElement) {
+
+            statusElement.className =
+                "backend-status offline";
+
+
+            statusElement.innerHTML =
+                '<span class="status-dot"></span> Backend Offline';
+
+        }
+
+
+        if (riskBackend) {
+
+            riskBackend.textContent =
+                "!";
+
+        }
+
+    }
+
+}
+
+
+
+/* =========================================================
+   ACTIVITY MONITOR
+========================================================= */
+
+function updateActivity() {
+
+    activityCount++;
+
+
+    const count =
+        document.getElementById(
+            "activity-count"
+        );
+
+
+    const lastCheck =
+        document.getElementById(
+            "last-check"
+        );
+
+
+    if (count) {
+
+        count.textContent =
+            activityCount;
+
+    }
+
+
+    if (lastCheck) {
+
+        lastCheck.textContent =
+            new Date().toLocaleTimeString();
+
+    }
+
+}
+
+
+
+/* =========================================================
+   SECURITY TEST
+========================================================= */
+
+function setupSecurityTest() {
+
+    const button =
+        document.getElementById(
+            "test-security-btn"
+        );
+
+
+    if (!button) return;
+
+
+    button.addEventListener(
+        "click",
+        async function () {
+
+            const box =
+                document.getElementById(
+                    "security-box"
+                );
+
+
+            const text =
+                document.getElementById(
+                    "security-alert"
+                );
+
+
+            const level =
+                document.getElementById(
+                    "security-level"
+                );
+
+
+            if (!box || !text || !level) {
+
+                return;
+
+            }
+
+
+            const danger =
+                box.classList.contains(
+                    "danger"
+                );
+
+
+            if (danger) {
+
+                box.className =
+                    "security-box normal";
+
+
+                const icon =
+                    box.querySelector(
+                        ".security-icon"
+                    );
+
+
+                if (icon) {
+
+                    icon.textContent =
+                        "✓";
+
+                }
+
+
+                text.textContent =
+                    "No suspicious activity detected";
+
+
+                level.className =
+                    "security-level normal";
+
+
+                level.textContent =
+                    "NORMAL";
+
+
+                button.textContent =
+                    "⚡ Run Security Test";
+
+
+                await logGuardianActivity(
+                    "Security test reset — system normal",
+                    "success"
+                );
+
+
+            } else {
+
+                box.className =
+                    "security-box danger";
+
+
+                const icon =
+                    box.querySelector(
+                        ".security-icon"
+                    );
+
+
+                if (icon) {
+
+                    icon.textContent =
+                        "!";
+
+                }
+
+
+                text.textContent =
+                    "Suspicious activity detected";
+
+
+                level.className =
+                    "security-level danger";
+
+
+                level.textContent =
+                    "HIGH";
+
+
+                button.textContent =
+                    "✓ Reset Security";
+
+
+                await logGuardianActivity(
+                    "Security test detected suspicious activity",
+                    "danger"
+                );
+
+            }
+
+
+            updateRiskScore();
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   DOCUMENT STATUS
+========================================================= */
+
+function getDocumentStatus(
+    expiry
+) {
+
+    if (!expiry) {
+
+        return "none";
+
+    }
+
+
+    const today =
+        new Date();
+
+
+    today.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    const expiryDate =
+        new Date(
+            expiry + "T00:00:00"
+        );
+
+
+    expiryDate.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    const days =
+        Math.ceil(
+            (
+                expiryDate -
+                today
+            ) /
+            (
+                1000 *
+                60 *
+                60 *
+                24
+            )
+        );
+
+
+    if (days < 0) {
+
+        return "expired";
+
+    }
+
+
+    if (days <= 30) {
+
+        return "expiring";
+
+    }
+
+
+    return "valid";
+
+}
+
+
+
+/* =========================================================
+   EXPIRY COUNTDOWN
+========================================================= */
+
+function getExpiryCountdown(
+    expiry
+) {
+
+    if (!expiry) {
+
+        return "No expiry date";
+
+    }
+
+
+    const today =
+        new Date();
+
+
+    today.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    const expiryDate =
+        new Date(
+            expiry + "T00:00:00"
+        );
+
+
+    expiryDate.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    const days =
+        Math.ceil(
+            (
+                expiryDate -
+                today
+            ) /
+            (
+                1000 *
+                60 *
+                60 *
+                24
+            )
+        );
+
+
+    if (days < 0) {
+
+        const n =
+            Math.abs(days);
+
+
+        return n === 1
+            ? "Expired 1 day ago"
+            : `Expired ${n} days ago`;
+
+    }
+
+
+    if (days === 0) {
+
+        return "⚠️ Expires today";
+
+    }
+
+
+    if (days === 1) {
+
+        return "⚠️ Expires tomorrow";
+
+    }
+
+
+    if (days <= 30) {
+
+        return `⚠️ Expires in ${days} days`;
+
+    }
+
+
+    return `✓ Expires in ${days} days`;
+
+}
+
+
+
+/* =========================================================
+   ESCAPE HTML
+========================================================= */
+
+function escapeHtml(
+    text
+) {
+
+    const div =
+        document.createElement(
+            "div"
+        );
+
+
+    div.textContent =
+        text || "";
+
+
+    return div.innerHTML;
+
+}
+
+
+
+/* =========================================================
+   DOCUMENT SYSTEM
+========================================================= */
+
+function setupDocumentSystem() {
+
+    const addButton =
+        document.getElementById(
+            "add-document-btn"
+        );
+
+
+    const fileInput =
+        document.getElementById(
+            "fileInput"
+        );
+
+
+    const expiryInput =
+        document.getElementById(
+            "expiryDate"
+        );
+
+
+    const selectedName =
+        document.getElementById(
+            "selected-file-name"
+        );
+
+
+    if (
+        !addButton ||
+        !fileInput ||
+        !expiryInput
+    ) {
+
+        console.error(
+            "Document controls not found."
+        );
+
+        return;
+
+    }
+
+
+
+    /* FILE SELECT */
+
+    fileInput.addEventListener(
+        "change",
+        function () {
+
+            if (!selectedName) return;
+
+
+            if (
+                fileInput.files.length >
+                0
+            ) {
+
+                selectedName.textContent =
+                    "📄 Selected: " +
+                    fileInput.files[0].name;
+
+            } else {
+
+                selectedName.textContent =
+                    "";
+
+            }
+
+        }
+    );
+
+
+
+    /* ADD DOCUMENT */
+
+    addButton.addEventListener(
+        "click",
+        async function () {
+
+            if (
+                !fileInput.files ||
+                fileInput.files.length === 0
+            ) {
+
+                alert(
+                    "Please choose a document first."
+                );
+
+                return;
+
+            }
+
+
+            const file =
+                fileInput.files[0];
+
+
+            const name =
+                file.name;
+
+
+            const expiry =
+                expiryInput.value;
+
+
+
+            /* DUPLICATE CHECK */
+
+            const existing =
+                document.querySelectorAll(
+                    ".document-item"
+                );
+
+
+            for (
+                const item of existing
+            ) {
+
+                if (
+                    item.dataset.name ===
+                    name
+                ) {
+
+                    alert(
+                        "This document is already added."
+                    );
+
+                    return;
+
+                }
+
+            }
+
+
+
+            documentCounter++;
+
+
+            const status =
+                getDocumentStatus(
+                    expiry
+                );
+
+
+            const documentList =
+                document.getElementById(
+                    "document-list"
+                );
+
+
+            if (!documentList) {
+
+                return;
+
+            }
+
+
+
+            const empty =
+                documentList.querySelector(
+                    ".empty-state"
+                );
+
+
+            if (empty) {
+
+                empty.remove();
+
+            }
+
+
+
+            const item =
+                document.createElement(
+                    "div"
+                );
+
+
+            item.className =
+                "document-item " +
+                status;
+
+
+            item.id =
+                "document-" +
+                documentCounter;
+
+
+            item.dataset.name =
+                name;
+
+
+            item.dataset.expiry =
+                expiry;
+
+
+            item.dataset.status =
+                status;
+
+
+
+            /* STATUS */
+
+            let statusText =
+                "⚪ No Expiry";
+
+
+            let statusClass =
+                "neutral";
+
+
+            if (
+                status ===
+                "expired"
+            ) {
+
+                statusText =
+                    "🔴 Expired";
+
+
+                statusClass =
+                    "danger";
+
+            }
+
+
+            else if (
+                status ===
+                "expiring"
+            ) {
+
+                statusText =
+                    "🟠 Expiring Soon";
+
+
+                statusClass =
+                    "warning";
+
+            }
+
+
+            else if (
+                status ===
+                "valid"
+            ) {
+
+                statusText =
+                    "🟢 Valid";
+
+
+                statusClass =
+                    "success";
+
+            }
+
+
+
+            const expiryText =
+                expiry
+                    ? "Expiry: " +
+                      new Date(
+                          expiry +
+                          "T00:00:00"
+                      ).toLocaleDateString() +
+                      " • " +
+                      getExpiryCountdown(
+                          expiry
+                      )
+                    : "No expiry date set";
+
+
+
+            item.innerHTML = `
+
+                <div class="document-icon">
+                    📄
+                </div>
+
+
+                <div class="document-info">
+
+                    <strong>
+                        ${escapeHtml(name)}
+                    </strong>
+
+                    <span>
+                        ${escapeHtml(
+                            expiryText
+                        )}
+                    </span>
+
+                </div>
+
+
+                <span
+                    class="status-pill ${statusClass}"
+                >
+                    ${statusText}
+                </span>
+
+
+                <button
+                    class="delete-btn"
+                    title="Delete document"
+                >
+                    🗑️
+                </button>
+
+            `;
+
+
+
+            /* DELETE */
+
+            const deleteButton =
+                item.querySelector(
+                    ".delete-btn"
+                );
+
+
+            if (deleteButton) {
+
+                deleteButton.addEventListener(
+                    "click",
+                    async function () {
+
+                        item.remove();
+
+
+                        await logGuardianActivity(
+                            `Document deleted: ${name}`,
+                            "warning"
+                        );
+
+
+                        refreshExpirySystem();
+
+
+                        updateRiskScore();
+
+                    }
+                );
+
+            }
+
+
+
+            documentList.appendChild(
+                item
+            );
+
+
+
+            /* LOG */
+
+            await logGuardianActivity(
+                `Document added: ${name}`,
+                status === "expired"
+                    ? "danger"
+                    : status === "expiring"
+                        ? "warning"
+                        : "success"
+            );
+
+
+
+            /* RESET INPUT */
+
+            fileInput.value =
+                "";
+
+
+            expiryInput.value =
+                "";
+
+
+            if (selectedName) {
+
+                selectedName.textContent =
+                    "";
+
+            }
+
+
+
+            refreshExpirySystem();
+
+
+            updateRiskScore();
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   REFRESH EXPIRY SYSTEM
+========================================================= */
+
+function refreshExpirySystem() {
+
+    const items =
+        document.querySelectorAll(
+            ".document-item"
+        );
+
+
+    let expiringCount =
+        0;
+
+
+    let expiredCount =
+        0;
+
+
+    const expiringDocuments =
+        [];
+
+
+    const expiredDocuments =
+        [];
+
+
+
+    items.forEach(
+        function (item) {
+
+            const expiry =
+                item.dataset.expiry;
+
+
+            const status =
+                getDocumentStatus(
+                    expiry
+                );
+
+
+            item.classList.remove(
+                "expired",
+                "expiring",
+                "valid",
+                "none"
+            );
+
+
+            item.classList.add(
+                status
+            );
+
+
+            item.dataset.status =
+                status;
+
+
+
+            const pill =
+                item.querySelector(
+                    ".status-pill"
+                );
+
+
+            const infoSpan =
+                item.querySelector(
+                    ".document-info span"
+                );
+
+
+
+            if (infoSpan) {
+
+                infoSpan.textContent =
+                    expiry
+                        ? "Expiry: " +
+                          new Date(
+                              expiry +
+                              "T00:00:00"
+                          ).toLocaleDateString() +
+                          " • " +
+                          getExpiryCountdown(
+                              expiry
+                          )
+                        : "No expiry date set";
+
+            }
+
+
+
+            if (!pill) return;
+
+
+
+            if (
+                status ===
+                "expired"
+            ) {
+
+                expiredCount++;
+
+
+                expiredDocuments.push(
+                    item.dataset.name
+                );
+
+
+                pill.className =
+                    "status-pill danger";
+
+
+                pill.textContent =
+                    "🔴 Expired";
+
+            }
+
+
+            else if (
+                status ===
+                "expiring"
+            ) {
+
+                expiringCount++;
+
+
+                expiringDocuments.push(
+                    item.dataset.name
+                );
+
+
+                pill.className =
+                    "status-pill warning";
+
+
+                pill.textContent =
+                    "🟠 Expiring Soon";
+
+            }
+
+
+            else if (
+                status ===
+                "valid"
+            ) {
+
+                pill.className =
+                    "status-pill success";
+
+
+                pill.textContent =
+                    "🟢 Valid";
+
+            }
+
+
+            else {
+
+                pill.className =
+                    "status-pill neutral";
+
+
+                pill.textContent =
+                    "⚪ No Expiry";
+
+            }
+
+        }
+    );
+
+
+
+    const total =
+        items.length;
+
+
+
+    const documentCount =
+        document.getElementById(
+            "document-count"
+        );
+
+
+    const expiringElement =
+        document.getElementById(
+            "expiring-count"
+        );
+
+
+    const expiredElement =
+        document.getElementById(
+            "expired-count"
+        );
+
+
+    const alertsElement =
+        document.getElementById(
+            "alerts-count"
+        );
+
+
+    const sectionCount =
+        document.getElementById(
+            "document-section-count"
+        );
+
+
+
+    if (documentCount) {
+
+        documentCount.textContent =
+            total;
+
+    }
+
+
+    if (expiringElement) {
+
+        expiringElement.textContent =
+            expiringCount;
+
+    }
+
+
+    if (expiredElement) {
+
+        expiredElement.textContent =
+            expiredCount;
+
+    }
+
+
+    if (alertsElement) {
+
+        alertsElement.textContent =
+            expiringCount +
+            expiredCount;
+
+    }
+
+
+    if (sectionCount) {
+
+        sectionCount.textContent =
+            total +
+            (
+                total === 1
+                    ? " document"
+                    : " documents"
+            );
+
+    }
+
+
+
+    updateExpiryAlerts(
+        expiringDocuments,
+        expiredDocuments
+    );
+
+
+
+    const documentList =
+        document.getElementById(
+            "document-list"
+        );
+
+
+    if (
+        documentList &&
+        total === 0 &&
+        !documentList.querySelector(
+            ".empty-state"
+        )
+    ) {
+
+        documentList.innerHTML = `
+
+            <div class="empty-state">
+
+                <div>
+                    📂
+                </div>
+
+                <strong>
+                    No documents yet
+                </strong>
+
+                <span>
+                    Add your first document below.
+                </span>
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   EXPIRY ALERTS
+========================================================= */
+
+function updateExpiryAlerts(
+    expiringDocuments,
+    expiredDocuments
+) {
+
+    const container =
+        document.getElementById(
+            "expiry-alerts"
+        );
+
+
+    const countElement =
+        document.getElementById(
+            "alert-section-count"
+        );
+
+
+    if (!container) return;
+
+
+
+    const total =
+        expiringDocuments.length +
+        expiredDocuments.length;
+
+
+
+    if (countElement) {
+
+        countElement.textContent =
+            total +
+            (
+                total === 1
+                    ? " alert"
+                    : " alerts"
+            );
+
+    }
+
+
+
+    if (total === 0) {
+
+        container.innerHTML = `
+
+            <div class="empty-state">
+
+                <div>
+                    🔔
+                </div>
+
+                <strong>
+                    No expiry alerts
+                </strong>
+
+                <span>
+                    Your documents are currently under control.
+                </span>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+
+    container.innerHTML =
+        "";
+
+
+
+    /* EXPIRED */
+
+    expiredDocuments.forEach(
+        function (name) {
+
+            const alert =
+                document.createElement(
+                    "div"
+                );
+
+
+            alert.className =
+                "expiry-alert-item danger";
+
+
+            alert.innerHTML = `
+
+                <div class="alert-symbol">
+                    🔴
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ${escapeHtml(name)}
+                    </strong>
+
+                    <span>
+                        This document has expired.
+                    </span>
+
+                </div>
+
+
+                <span class="alert-label">
+                    EXPIRED
+                </span>
+
+            `;
+
+
+            container.appendChild(
+                alert
+            );
+
+        }
+    );
+
+
+
+    /* EXPIRING */
+
+    expiringDocuments.forEach(
+        function (name) {
+
+            const alert =
+                document.createElement(
+                    "div"
+                );
+
+
+            alert.className =
+                "expiry-alert-item warning";
+
+
+            alert.innerHTML = `
+
+                <div class="alert-symbol">
+                    🟠
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        ${escapeHtml(name)}
+                    </strong>
+
+                    <span>
+                        This document expires within 30 days.
+                    </span>
+
+                </div>
+
+
+                <span class="alert-label">
+                    EXPIRING
+                </span>
+
+            `;
+
+
+            container.appendChild(
+                alert
+            );
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   CHAT MESSAGE
+========================================================= */
+
+function addChatMessage(
+    type,
+    message
+) {
+
+    const chatArea =
+        document.getElementById(
+            "chat-area"
+        );
+
+
+    if (!chatArea) return;
+
+
+
+    const chatMessage =
+        document.createElement(
+            "div"
+        );
+
+
+    chatMessage.className =
+        "chat-message " +
+        (
+            type === "user"
+                ? "user-message"
+                : "guardian-message"
+        );
+
+
+
+    const avatar =
+        document.createElement(
+            "div"
+        );
+
+
+    avatar.className =
+        "chat-avatar";
+
+
+    avatar.textContent =
+        type === "user"
+            ? "👤"
+            : "🤖";
+
+
+
+    const bubble =
+        document.createElement(
+            "div"
+        );
+
+
+    bubble.className =
+        "message-bubble";
+
+
+
+    const name =
+        document.createElement(
+            "strong"
+        );
+
+
+    name.textContent =
+        type === "user"
+            ? "You"
+            : "Guardian";
+
+
+
+    const text =
+        document.createElement(
+            "p"
+        );
+
+
+    text.textContent =
+        message;
+
+
+
+    bubble.appendChild(
+        name
+    );
+
+
+    bubble.appendChild(
+        text
+    );
+
+
+    chatMessage.appendChild(
+        avatar
+    );
+
+
+    chatMessage.appendChild(
+        bubble
+    );
+
+
+    chatArea.appendChild(
+        chatMessage
+    );
+
+
+    chatArea.scrollTop =
+        chatArea.scrollHeight;
+
+}
+
+
+
+/* =========================================================
+   GET DOCUMENTS
+========================================================= */
+
+function getDocumentsForGuardian() {
+
+    const items =
+        document.querySelectorAll(
+            ".document-item"
+        );
+
+
+    const documents =
+        [];
+
+
+    items.forEach(
+        function (item) {
+
+            documents.push({
+
+                name:
+                    item.dataset.name ||
+                    "",
+
+                expiry:
+                    item.dataset.expiry ||
+                    "",
+
+                status:
+                    item.dataset.status ||
+                    "none"
+
+            });
+
+        }
+    );
+
+
+    return documents;
+
+}
+
+
+
+/* =========================================================
+   PRIORITY QUESTION
+========================================================= */
+
+function isPriorityQuestion(
+    question
+) {
+
+    const q =
+        question.toLowerCase();
+
+
+    return (
+
+        q.includes("renew") ||
+
+        q.includes("priority") ||
+
+        q.includes("urgent") ||
+
+        q.includes("first") ||
+
+        q.includes("attention") ||
+
+        q.includes("important") ||
+
+        q.includes("which document")
+
+    );
+
+}
+
+
+
+/* =========================================================
+   SMART PRIORITY
+========================================================= */
+
+function buildPriorityReply(
+    documents
+) {
+
+    if (
+        documents.length ===
+        0
+    ) {
+
+        return (
+
+            "📂 NO DOCUMENTS AVAILABLE\n\n" +
+
+            "You haven't added any documents yet.\n\n" +
+
+            "Add documents with expiry dates so I can calculate their priority."
+
+        );
+
+    }
+
+
+
+    const today =
+        new Date();
+
+
+    today.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+
+    documents.forEach(
+        function (doc) {
+
+            if (!doc.expiry) {
+
+                doc.daysRemaining =
+                    null;
+
+                doc.priority =
+                    99;
+
+                return;
+
+            }
+
+
+
+            const expiryDate =
+                new Date(
+                    doc.expiry +
+                    "T00:00:00"
+                );
+
+
+            expiryDate.setHours(
+                0,
+                0,
+                0,
+                0
+            );
+
+
+
+            doc.daysRemaining =
+                Math.ceil(
+                    (
+                        expiryDate -
+                        today
+                    ) /
+                    (
+                        1000 *
+                        60 *
+                        60 *
+                        24
+                    )
+                );
+
+
+
+            if (
+                doc.daysRemaining <
+                0
+            ) {
+
+                doc.priority =
+                    1;
+
+            }
+
+
+            else if (
+                doc.daysRemaining <=
+                7
+            ) {
+
+                doc.priority =
+                    2;
+
+            }
+
+
+            else if (
+                doc.daysRemaining <=
+                30
+            ) {
+
+                doc.priority =
+                    3;
+
+            }
+
+
+            else {
+
+                doc.priority =
+                    4;
+
+            }
+
+        }
+    );
+
+
+
+    documents.sort(
+        function (
+            a,
+            b
+        ) {
+
+            if (
+                a.priority !==
+                b.priority
+            ) {
+
+                return (
+                    a.priority -
+                    b.priority
+                );
+
+            }
+
+
+            if (
+                a.daysRemaining !==
+                    null &&
+                b.daysRemaining !==
+                    null
+            ) {
+
+                return (
+                    a.daysRemaining -
+                    b.daysRemaining
+                );
+
+            }
+
+
+            return 0;
+
+        }
+    );
+
+
+
+    const highest =
+        documents[0];
+
+
+    let reply =
+        "🧠 SMART PRIORITY ANALYSIS\n\n";
+
+
+
+    if (
+        highest.daysRemaining !==
+            null &&
+        highest.daysRemaining <
+            0
+    ) {
+
+        const days =
+            Math.abs(
+                highest.daysRemaining
+            );
+
+
+        reply +=
+
+            "🚨 HIGHEST PRIORITY\n\n" +
+
+            "🔴 " +
+            highest.name +
+            "\n" +
+
+            "Already expired by " +
+            days +
+            (
+                days === 1
+                    ? " day."
+                    : " days."
+            ) +
+
+            "\n\n👉 Renew or replace this document first.";
+
+    }
+
+
+    else if (
+        highest.daysRemaining !==
+            null &&
+        highest.daysRemaining <=
+            7
+    ) {
+
+        reply +=
+
+            "🔴 HIGHEST PRIORITY\n\n" +
+
+            "📄 " +
+            highest.name +
+            "\n" +
+
+            "Expires in " +
+            highest.daysRemaining +
+            (
+                highest.daysRemaining ===
+                1
+                    ? " day."
+                    : " days."
+            ) +
+
+            "\n\n👉 This document needs immediate attention.";
+
+    }
+
+
+    else if (
+        highest.daysRemaining !==
+            null &&
+        highest.daysRemaining <=
+            30
+    ) {
+
+        reply +=
+
+            "🟠 HIGHEST PRIORITY\n\n" +
+
+            "📄 " +
+            highest.name +
+            "\n" +
+
+            "Expires in " +
+            highest.daysRemaining +
+            " days." +
+
+            "\n\n👉 Consider starting the renewal process soon.";
+
+    }
+
+
+    else {
+
+        reply +=
+
+            "🟢 NO URGENT ACTION NEEDED\n\n" +
+
+            "Your documents are currently not close to expiry.\n\n" +
+
+            "Guardian will continue monitoring them.";
+
+    }
+
+
+
+    /* PRIORITY LIST */
+
+    if (
+        documents.length >
+        1
+    ) {
+
+        reply +=
+            "\n\n📊 PRIORITY ORDER\n\n";
+
+
+        documents.forEach(
+            function (
+                doc,
+                index
+            ) {
+
+                let statusText =
+                    "";
+
+
+                if (
+                    doc.daysRemaining ===
+                    null
+                ) {
+
+                    statusText =
+                        "⚪ No expiry date";
+
+                }
+
+
+                else if (
+                    doc.daysRemaining <
+                    0
+                ) {
+
+                    statusText =
+                        "🔴 Expired";
+
+                }
+
+
+                else if (
+                    doc.daysRemaining <=
+                    7
+                ) {
+
+                    statusText =
+                        "🔴 " +
+                        doc.daysRemaining +
+                        " days left";
+
+                }
+
+
+                else if (
+                    doc.daysRemaining <=
+                    30
+                ) {
+
+                    statusText =
+                        "🟠 " +
+                        doc.daysRemaining +
+                        " days left";
+
+                }
+
+
+                else {
+
+                    statusText =
+                        "🟢 " +
+                        doc.daysRemaining +
+                        " days left";
+
+                }
+
+
+                reply +=
+
+                    (
+                        index +
+                        1
+                    ) +
+
+                    ". " +
+
+                    doc.name +
+
+                    " — " +
+
+                    statusText +
+
+                    "\n";
+
+            }
+        );
+
+    }
+
+
+
+    return reply;
+
+}
+
+
+
+/* =========================================================
+   GUARDIAN
+========================================================= */
+
+async function askGuardian(
+    question
+) {
+
+    question =
+        String(
+            question ||
+            ""
+        ).trim();
+
+
+    if (!question) {
+
+        return;
+
+    }
+
+
+
+    addChatMessage(
+        "user",
+        question
+    );
+
+
+
+    const documents =
+        getDocumentsForGuardian();
+
+
+
+    /* SMART PRIORITY */
+
+    if (
+        isPriorityQuestion(
+            question
+        )
+    ) {
+
+        const reply =
+            buildPriorityReply(
+                documents
+            );
+
+
+        addChatMessage(
+            "guardian",
+            reply
+        );
+
+
+        await logGuardianActivity(
+            "Guardian generated smart document priority analysis",
+            "info"
+        );
+
+
+        return;
+
+    }
+
+
+
+    /* NORMAL BACKEND */
+
+    const documentNames =
+        [];
+
+
+    const expiringDocuments =
+        [];
+
+
+    const expiredDocuments =
+        [];
+
+
+    const validDocuments =
+        [];
+
+
+    const noExpiryDocuments =
+        [];
+
+
+
+    documents.forEach(
+        function (doc) {
+
+            documentNames.push(
+                doc.name
+            );
+
+
+            if (
+                doc.status ===
+                "expiring"
+            ) {
+
+                expiringDocuments.push(
+                    doc.name
+                );
+
+            }
+
+
+            else if (
+                doc.status ===
+                "expired"
+            ) {
+
+                expiredDocuments.push(
+                    doc.name
+                );
+
+            }
+
+
+            else if (
+                doc.status ===
+                "valid"
+            ) {
+
+                validDocuments.push(
+                    doc.name
+                );
+
+            }
+
+
+            else {
+
+                noExpiryDocuments.push(
+                    doc.name
+                );
+
+            }
+
+        }
+    );
+
+
+
+    try {
+
+        const response =
+            await fetch(
+                "http://127.0.0.1:5000/api/guardian",
+                {
+
+                    method:
+                        "POST",
+
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+
+                    },
+
+
+                    body:
+                        JSON.stringify({
+
+                            question:
+                                question,
+
+                            documentNames:
+                                documentNames,
+
+                            expiringDocuments:
+                                expiringDocuments,
+
+                            expiredDocuments:
+                                expiredDocuments,
+
+                            validDocuments:
+                                validDocuments,
+
+                            noExpiryDocuments:
+                                noExpiryDocuments
+
+                        })
+
+                }
+            );
+
+
+        if (
+            !response.ok
+        ) {
+
+            throw new Error(
+                "Guardian backend error"
+            );
+
+        }
+
+
+
+        const data =
+            await response.json();
+
+
+
+        addChatMessage(
+            "guardian",
+            data.reply ||
+            "Guardian received your request."
+        );
+
+
+        await loadSecurityTimeline();
+
+
+
+    } catch (error) {
+
+        console.error(
+            "Guardian error:",
+            error
+        );
+
+
+        addChatMessage(
+            "guardian",
+            "⚠️ Guardian backend is offline. Please start the Flask server in Terminal."
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   GUARDIAN CHAT SETUP
+========================================================= */
+
+function setupGuardianChat() {
+
+    const sendButton =
+        document.getElementById(
+            "send-guardian-btn"
+        );
+
+
+    const input =
+        document.getElementById(
+            "guardian-question"
+        );
+
+
+
+    if (
+        sendButton &&
+        input
+    ) {
+
+
+        sendButton.addEventListener(
+            "click",
+            function () {
+
+                const question =
+                    input.value.trim();
+
+
+                if (!question) {
+
+                    return;
+
+                }
+
+
+                input.value =
+                    "";
+
+
+                askGuardian(
+                    question
+                );
+
+            }
+        );
+
+
+
+        input.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key ===
+                    "Enter"
+                ) {
+
+                    event.preventDefault();
+
+
+                    const question =
+                        input.value.trim();
+
+
+                    if (!question) {
+
+                        return;
+
+                    }
+
+
+                    input.value =
+                        "";
+
+
+                    askGuardian(
+                        question
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+
+    document
+        .querySelectorAll(
+            ".suggestion"
+        )
+        .forEach(
+            function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        askGuardian(
+                            button.textContent.trim()
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+}
+
+
+
+/* =========================================================
+   RISK SCORE
+========================================================= */
+
+async function updateRiskScore() {
+
+    try {
+
+        const documentCount =
+            document.querySelectorAll(
+                ".document-item"
+            ).length;
+
+
+        const expiringCount =
+            parseInt(
+                document.getElementById(
+                    "expiring-count"
+                )?.textContent ||
+                "0",
+                10
+            );
+
+
+        const expiredCount =
+            parseInt(
+                document.getElementById(
+                    "expired-count"
+                )?.textContent ||
+                "0",
+                10
+            );
+
+
+        const securityAlert =
+            document
+                .getElementById(
+                    "security-box"
+                )
+                ?.classList.contains(
+                    "danger"
+                ) ||
+            false;
+
+
+
+        const response =
+            await fetch(
+                "http://127.0.0.1:5000/api/risk-score",
+                {
+
+                    method:
+                        "POST",
+
+
+                    headers: {
+
+                        "Content-Type":
+                            "application/json"
+
+                    },
+
+
+                    body:
+                        JSON.stringify({
+
+                            documentCount:
+                                documentCount,
+
+                            expiringCount:
+                                expiringCount,
+
+                            expiredCount:
+                                expiredCount,
+
+                            securityAlert:
+                                securityAlert
+
+                        })
+
+                }
+            );
+
+
+        if (
+            !response.ok
+        ) {
+
+            throw new Error(
+                "Risk score unavailable"
+            );
+
+        }
+
+
+
+        const data =
+            await response.json();
+
+
+
+        const scoreElement =
+            document.getElementById(
+                "risk-score"
+            );
+
+
+        const statusElement =
+            document.getElementById(
+                "risk-status"
+            );
+
+
+        const messageElement =
+            document.getElementById(
+                "risk-message"
+            );
+
+
+        const documentsElement =
+            document.getElementById(
+                "risk-documents"
+            );
+
+
+        const expiryElement =
+            document.getElementById(
+                "risk-expiry"
+            );
+
+
+        const securityElement =
+            document.getElementById(
+                "risk-security"
+            );
+
+
+        const backendElement =
+            document.getElementById(
+                "risk-backend"
+            );
+
+
+        const circle =
+            document.querySelector(
+                ".risk-circle"
+            );
+
+
+
+        if (scoreElement) {
+
+            scoreElement.textContent =
+                data.score;
+
+        }
+
+
+
+        if (statusElement) {
+
+            statusElement.className =
+                "risk-status " +
+                data.level;
+
+
+
+            if (
+                data.level ===
+                "safe"
+            ) {
+
+                statusElement.textContent =
+                    "🟢 SAFE";
+
+
+                if (messageElement) {
+
+                    messageElement.textContent =
+                        "Your digital environment is currently secure.";
+
+                }
+
+            }
+
+
+            else if (
+                data.level ===
+                "warning"
+            ) {
+
+                statusElement.textContent =
+                    "🟠 ATTENTION REQUIRED";
+
+
+                if (messageElement) {
+
+                    messageElement.textContent =
+                        "Some areas need your attention.";
+
+                }
+
+            }
+
+
+            else {
+
+                statusElement.textContent =
+                    "🔴 HIGH RISK";
+
+
+                if (messageElement) {
+
+                    messageElement.textContent =
+                        "Immediate attention is recommended.";
+
+                }
+
+            }
+
+        }
+
+
+
+        /* RISK CIRCLE */
+
+        if (circle) {
+
+            const degrees =
+                data.score *
+                3.6;
+
+
+            let riskColor =
+                "#22c55e";
+
+
+            if (
+                data.level ===
+                "warning"
+            ) {
+
+                riskColor =
+                    "#f59e0b";
+
+            }
+
+
+            if (
+                data.level ===
+                "danger"
+            ) {
+
+                riskColor =
+                    "#ef4444";
+
+            }
+
+
+            circle.style.background =
+                `conic-gradient(
+                    ${riskColor} 0deg,
+                    ${riskColor} ${degrees}deg,
+                    #e5e7eb ${degrees}deg,
+                    #e5e7eb 360deg
+                )`;
+
+        }
+
+
+
+        /* CHECKS */
+
+        if (documentsElement) {
+
+            documentsElement.textContent =
+                documentCount >
+                0
+                    ? "✓"
+                    : "!";
+
+        }
+
+
+        if (expiryElement) {
+
+            expiryElement.textContent =
+                expiringCount ===
+                    0 &&
+                expiredCount ===
+                    0
+                    ? "✓"
+                    : "!";
+
+        }
+
+
+        if (securityElement) {
+
+            securityElement.textContent =
+                securityAlert
+                    ? "!"
+                    : "✓";
+
+        }
+
+
+        if (backendElement) {
+
+            const backendStatus =
+                document.getElementById(
+                    "backend-status"
+                );
+
+
+            backendElement.textContent =
+                backendStatus?.classList.contains(
+                    "connected"
+                )
+                    ? "✓"
+                    : "!";
+
+        }
+
+
+
+    } catch (error) {
+
+        console.log(
+            "Risk score error:",
+            error
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   SECURITY TIMELINE
+========================================================= */
+
+async function loadSecurityTimeline() {
+
+    try {
+
+        const response =
+            await fetch(
+                "http://127.0.0.1:5000/api/activity"
+            );
+
+
+        if (
+            !response.ok
+        ) {
+
+            throw new Error(
+                "Activity unavailable"
+            );
+
+        }
+
+
+
+        const data =
+            await response.json();
+
+
+
+        const timeline =
+            document.getElementById(
+                "security-timeline"
+            );
+
+
+        const countElement =
+            document.getElementById(
+                "activity-log-count"
+            );
+
+
+        if (!timeline) {
+
+            return;
+
+        }
+
+
+
+        const activities =
+            data.activities ||
+            [];
+
+
+
+        if (countElement) {
+
+            countElement.textContent =
+                `${activities.length} event${
+                    activities.length ===
+                    1
+                        ? ""
+                        : "s"
+                }`;
+
+        }
+
+
+
+        if (
+            activities.length ===
+            0
+        ) {
+
+            timeline.innerHTML = `
+
+                <div class="timeline-empty">
+
+                    <div>
+                        🛡️
+                    </div>
+
+                    <strong>
+                        Waiting for activity
+                    </strong>
+
+                    <span>
+                        Guardian events will appear here.
+                    </span>
+
+                </div>
+
+            `;
+
+            return;
+
+        }
+
+
+
+        timeline.innerHTML =
+            activities
+                .slice(
+                    0,
+                    10
+                )
+                .map(
+                    function (
+                        activity
+                    ) {
+
+                        let icon =
+                            "🛡️";
+
+
+                        if (
+                            activity.level ===
+                            "success"
+                        ) {
+
+                            icon =
+                                "✓";
+
+                        }
+
+
+                        else if (
+                            activity.level ===
+                            "warning"
+                        ) {
+
+                            icon =
+                                "⚠️";
+
+                        }
+
+
+                        else if (
+                            activity.level ===
+                            "danger"
+                        ) {
+
+                            icon =
+                                "🚨";
+
+                        }
+
+
+
+                        return `
+
+                            <div
+                                class="timeline-item ${
+                                    escapeHtml(
+                                        activity.level ||
+                                        "info"
+                                    )
+                                }"
+                            >
+
+                                <div class="timeline-dot">
+
+                                    ${icon}
+
+                                </div>
+
+
+                                <div class="timeline-content">
+
+                                    <strong>
+                                        ${escapeHtml(
+                                            activity.message
+                                        )}
+                                    </strong>
+
+
+                                    <span>
+                                        ${escapeHtml(
+                                            activity.time
+                                        )}
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        `;
+
+                    }
+                )
+                .join("");
+
+
+
+    } catch (error) {
+
+        console.log(
+            "Activity timeline error:",
+            error
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   LOG ACTIVITY
+========================================================= */
+
+async function logGuardianActivity(
+    message,
+    level = "info"
+) {
+
+    try {
+
+        await fetch(
+            "http://127.0.0.1:5000/api/activity",
+            {
+
+                method:
+                    "POST",
+
+
+                headers: {
+
+                    "Content-Type":
+                        "application/json"
+
+                },
+
+
+                body:
+                    JSON.stringify({
+
+                        message:
+                            message,
+
+                        level:
+                            level
+
+                    })
+
+            }
+        );
+
+
+        await loadSecurityTimeline();
+
+
+
+    } catch (error) {
+
+        console.log(
+            "Activity logging failed:",
+            error
+        );
+
+    }
+
+}
+
+
+
+/* =========================================================
+   THEME
+========================================================= */
+
+function setupTheme() {
+
+    const themeToggle =
+        document.getElementById(
+            "theme-toggle"
+        );
+
+
+    if (!themeToggle) {
+
+        return;
+
+    }
+
+
+
+    function applyTheme() {
+
+        const dark =
+            localStorage.getItem(
+                "guardian-theme"
+            ) ===
+            "dark";
+
+
+        document.body.classList.toggle(
+            "dark-mode",
+            dark
+        );
+
+
+        themeToggle.textContent =
+            dark
+                ? "☀️"
+                : "🌙";
+
+    }
+
+
+
+    themeToggle.addEventListener(
+        "click",
+        function () {
+
+            const dark =
+                document.body.classList.toggle(
+                    "dark-mode"
+                );
+
+
+            localStorage.setItem(
+                "guardian-theme",
+                dark
+                    ? "dark"
+                    : "light"
+            );
+
+
+            themeToggle.textContent =
+                dark
+                    ? "☀️"
+                    : "🌙";
+
+        }
+    );
+
+
+
+    applyTheme();
+
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+function setupNavigation() {
+
+    document
+        .querySelectorAll(
+            ".nav-item"
+        )
+        .forEach(
+            function (item) {
+
+                item.addEventListener(
+                    "click",
+                    function () {
+
+                        document
+                            .querySelectorAll(
+                                ".nav-item"
+                            )
+                            .forEach(
+                                function (
+                                    nav
+                                ) {
+
+                                    nav.classList.remove(
+                                        "active"
+                                    );
+
+                                }
+                            );
+
+
+                        item.classList.add(
+                            "active"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+}
+
+
+
+/* =========================================================
+   START SYSTEM
+========================================================= */
+
+function startGuardianSystem() {
+
+
+    setupDocumentSystem();
+
+
+    setupGuardianChat();
+
+
+    setupSecurityTest();
+
+
+    setupTheme();
+
+
+    setupNavigation();
+
+
+    refreshExpirySystem();
+
+
+    updateActivity();
+
+
+    updateBackendStatus();
+
+
+    updateRiskScore();
+
+
+    loadSecurityTimeline();
+
+
+
+    /* AUTO REFRESH */
+
+    setInterval(
+        updateActivity,
+        5000
+    );
+
+
+    setInterval(
+        refreshExpirySystem,
+        10000
+    );
+
+
+    setInterval(
+        updateBackendStatus,
+        10000
+    );
+
+
+    setInterval(
+        updateRiskScore,
+        10000
+    );
+
+
+    setInterval(
+        loadSecurityTimeline,
+        5000
+    );
+
+}
+
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+if (
+    document.readyState ===
+    "loading"
+) {
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        startGuardianSystem
+    );
+
+} else {
+
+    startGuardianSystem();
+
+}
+
+</script>
+
+</body>
+
+</html>
